@@ -1,0 +1,53 @@
+*{
+    font-family: "Work Sans", sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* font-size: 10px; */
+}
+
+.main{
+    height: 100vh;
+    background-color: #205781;
+    color: #F6F8D5;
+    padding: 1.25rem
+}
+
+.qute-display{
+    min-height: 50%;
+    padding: 1.25rem;
+    margin-top: 3rem;
+    font-size: 1rem;
+    background-color: #4F959D;
+    border-radius:0.6rem
+}
+
+.qute-content{
+    text-align: center;
+    line-height: 1.5rem;
+}
+.author{
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 3.75rem;
+}
+
+.btn{
+    padding: 0.7rem;
+    width: 6.25rem;
+    background-color: #D6BD98;
+    border: none;
+    border-radius: 0.5rem;
+    &:active{
+        background-color:darkgoldenrod;
+    }
+}
+.buttons-holder{
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    padding-top: 2rem;
+}
+.highlighted {
+    background-color: #b3e5fc; /* Light blue highlight */
+  }
