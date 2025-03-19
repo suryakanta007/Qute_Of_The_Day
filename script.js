@@ -42,6 +42,11 @@ async function copyToClipboard(element) {
       console.error("Failed to copy: ", err);
     }
   }
+// To share on twitter 
+  function shareOnTwitter(url, text) {
+    const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;
+    window.open(tweetUrl, '_blank', 'noopener');
+}
 // It is for default 1st time call to show a random qute.
 showQute()
 
@@ -51,4 +56,7 @@ addNew.addEventListener("click",(e)=>{
 
 copy.addEventListener("click",()=>{
     copyToClipboard(quteContent);
+})
+share.addEventListener("click",()=>{
+    shareOnTwitter(quteContent.innerText,"Qute of the Day : ")
 })
